@@ -1,0 +1,840 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red67\green192\blue160;\red23\green23\blue23;\red202\green202\blue202;
+\red140\green211\blue254;\red183\green111\blue179;\red212\green214\blue154;\red194\green126\blue101;\red167\green197\blue152;
+\red0\green0\blue0;\red42\green49\blue64;\red245\green245\blue246;\red70\green137\blue204;\red0\green0\blue0;
+\red89\green138\blue67;\red255\green255\blue255;\red89\green138\blue67;\red156\green155\blue176;\red68\green69\blue86;
+}
+{\*\expandedcolortbl;;\cssrgb\c30588\c78824\c69020;\cssrgb\c11765\c11765\c11765;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c77255\c52549\c75294;\cssrgb\c86275\c86275\c66667;\cssrgb\c80784\c56863\c47059;\cssrgb\c70980\c80784\c65882;
+\cssrgb\c0\c0\c0;\cssrgb\c21569\c25490\c31765;\cssrgb\c96863\c96863\c97255;\cssrgb\c33725\c61176\c83922;\csgray\c0\c0;
+\cssrgb\c41569\c60000\c33333;\cssrgb\c100000\c100000\c100000;\cssrgb\c41569\c60000\c33333;\cssrgb\c67451\c67451\c74510;\cssrgb\c33725\c34510\c41176;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh17440\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 1) Simple interest formula - SI = (Principal amount * rate of interest * time) /100\
+Area of circle - 3.14 * r* r \
+\
+2)In case of area of circle if we define variable as float it will give us error , because when we add any decimal value in program without mentioning whether its float or double then program will\
+Automatically consider as double . Here 3.14 we are declaring without data type so its consider as double. If we add f after value, it will consider as float.\
+\
+ error: incompatible types: possible lossy conversion from double to float\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Scanner\cf4 \strokec4  \cf5 \strokec5 sc\cf4 \strokec4  = \cf6 \strokec6 new\cf4 \strokec4  \cf7 \strokec7 Scanner\cf4 \strokec4 (\cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 in\cf4 \strokec4 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "Enter Radius"\cf4 \strokec4 );\cb1 \
+\cb3         \cf2 \strokec2 float\cf4 \strokec4  \cf5 \strokec5 radius\cf4 \strokec4  = \cf5 \strokec5 sc\cf4 \strokec4 .\cf7 \strokec7 nextFloat\cf4 \strokec4 ();\cb1 \
+\cb3         \cb1 \
+\cb3         \cf2 \strokec2 float\cf4 \strokec4  \cf5 \strokec5 area\cf4 \strokec4  = \cf9 \strokec9 3.14\cf4 \strokec4 *radius*radius;\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 Correct -\cf4  \cf2 \cb3 \strokec2 float\cf4 \strokec4  \cf5 \strokec5 area\cf4 \strokec4  = \cf9 \strokec9 3.14f\cf4 \strokec4 *radius*radius;\cb1 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Type Promotion - 1. Java automatically promotes each byte,short or char operand  to int when evaluating in expression.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4         \cf2 \strokec2 short\cf4 \strokec4  \cf5 \strokec5 a\cf4 \strokec4  = \cf9 \strokec9 5\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 byte\cf4 \strokec4  \cf5 \strokec5 b\cf4 \strokec4  = \cf9 \strokec9 25\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 char\cf4 \strokec4  \cf5 \strokec5 c\cf4 \strokec4 = \cf8 \strokec8 'a'\cf4 \strokec4 ;\cb1 \
+\
+\cb3         \cf2 \strokec2 byte\cf4 \strokec4  \cf5 \strokec5 bt\cf4 \strokec4  = a+b+c;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+error: incompatible types: possible lossy conversion from int to byte because while evaluating it will consider a ,b ,c as int\
+\
+2.If one operand is long , float or double the whole expression is promoted to long, float or double respectively.\
+\
+3) Income tax calculator - \cf11 \cb12 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 In Java, when you perform integer division, the result will also be an integer. In this case, \cf11 \cb12 \strokec11 20/100\cf11 \cb12 \strokec11  will evaluate to \cf11 \cb12 \strokec11 0\cf11 \cb12 \strokec11  because both \cf11 \cb12 \strokec11 20\cf11 \cb12 \strokec11  and \cf11 \cb12 \strokec11 100\cf11 \cb12 \strokec11  are integers.\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf11 To fix this, you should use floating-point numbers for the percentage calculation to get a decimal result.\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4  tax = (\cf2 \strokec2 int\cf4 \strokec4 ) (income*\cf9 \strokec9 0.2\cf4 \strokec4 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb12 \strokec11 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 4) Reverse No - \cf11 \cb12 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 \
+\pard\pardeftab720\sa400\partightenfactor0
+\cf11 1. Find last digit of no - if we divide any no by 10 it\'92s reminder will return last digit.\
+2. Once we find last digit store that into rev variable i.e. rev*10+lastdigit - when we multiple by 10 it will append last digit to existing no\
+3. Once we store last digit we need to remove that digit from number so when we divide no by 10 its quotient will return remaining no\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 num\cf4 \strokec4 = \cf5 \strokec5 sc\cf4 \strokec4 .\cf7 \strokec7 nextInt\cf4 \strokec4 ();\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 rev\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ,lastDigit =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf6 \strokec6 while\cf4 \strokec4 (num>\cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3             lastDigit=num%\cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3             rev=rev*\cf9 \strokec9 10\cf4 \strokec4 +lastDigit;\cb1 \
+\cb3             num=num/\cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3         \}\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+\cf11 \cb12 \strokec11 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 4) Check no is prime or not - \
+No which is divisible by 1 or itself not divisible by any other no is prime no. \
+Since every no is divisible by 1 and itself will start loop from 2 to n-1 n means no. and will divide no by all the no from 1 to n-1\
+If no is divisible it means it\'92s not prime. If not then its prime no . If no is divisible it will return remainder as 0.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4  \cf6 \strokec6 if\cf4 \strokec4 (n == \cf9 \strokec9 2\cf4 \strokec4 )\{\cb1 \
+\cb3             \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "2 is prime no"\cf4 \strokec4 );\cb1 \
+\cb3         \}\cf6 \strokec6 else\cf4 \strokec4 \{\cb1 \
+\cb3             \cf2 \strokec2 boolean\cf4 \strokec4  \cf5 \strokec5 isPrime\cf4 \strokec4 =\cf13 \cb3 \strokec13 true\cf4 \cb3 \strokec4 ;\cb1 \
+\cb3             \cf6 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 i\cf4 \strokec4 =\cf9 \strokec9 2\cf4 \strokec4 ; i<=n-\cf9 \strokec9 1\cf4 \strokec4 ; i++)\{\cb1 \
+\cb3                 \cf6 \strokec6 if\cf4 \strokec4 (n % i == \cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3                     isPrime = \cf13 \cb3 \strokec13 false\cf4 \cb3 \strokec4 ;\cb1 \
+\cb3                 \}\cb1 \
+\cb3             \}\cb1 \
+\
+\cb3             \cf6 \strokec6 if\cf4 \strokec4 (isPrime == \cf13 \cb3 \strokec13 true\cf4 \cb3 \strokec4 )\{\cb1 \
+\cb3                 \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (n + \cf8 \strokec8 " is prime no"\cf4 \strokec4 );\cb1 \
+\cb3             \}\cf6 \strokec6 else\cf4 \strokec4 \{\cb1 \
+\cb3                 \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (n + \cf8 \strokec8 " is not prime no"\cf4 \strokec4 );\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  \
+\
+Above loop is running for  n-2 times since we are running from I=2 . We can optimise this solution so if we check factorial for 12 that will be 12 * 1 , 6* 2 , 4*3 , 3* 4 , 2* 6, 1* 12 so basically 1st 3 factorials are unique and after that same factorials are repeating . When both factors reach its maximum value , it will start repeating . So for that condition n is equal to nearest point of underoot n * underoot n . Based on this conclusion we can run loop from I=2  to underfoot n.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 i\cf4 \strokec4 =\cf9 \strokec9 2\cf4 \strokec4 ; i<=\cf5 \strokec5 Math\cf4 \strokec4 .\cf7 \strokec7 sqrt\cf4 \strokec4 (n); i++)\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+5) Bionominal Coefficient \
+Will get n and r as input formula is n!/r!*(n-r)! \
+We need to calculate factorial of n first then factorial of r and then factorial of (n-r) and then we can multiply fact_r and fact_nmr and divide fact_n with these values.\cf11 \cb12 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 \
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 int\cf4 \strokec4  \cf7 \strokec7 bionominalCoefficient\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 n\cf4 \strokec4  , \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 r\cf4 \strokec4 )\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 n_fact\cf4 \strokec4  = \cf7 \strokec7 factorial\cf4 \strokec4 (n);\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 r_fact\cf4 \strokec4  = \cf7 \strokec7 factorial\cf4 \strokec4 (r);\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 nmr_fact\cf4 \strokec4 = \cf7 \strokec7 factorial\cf4 \strokec4 (n-r);\cb1 \
+\
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 binCoefficient\cf4 \strokec4  = n_fact/(r_fact*nmr_fact);\cb1 \
+\cb3         \cf6 \strokec6 return\cf4 \strokec4  binCoefficient;\cb1 \
+\cb3     \}\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 6) Prime no in the range\
+1. First we need to write function where take no n and we need to divide that no by every no from 2 to n-1 since every no is divisible by 1 and itself.\
+And check if n%I == 0 if yes not prime else prime\
+Then we need to call this function from 2 to n to check each no in range \
+\
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 class\cf4 \cb3 \strokec4  \cf2 \strokec2 PrimeInTheRange\cf4 \strokec4 \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3     \cf13 \cb3 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 void\cf4 \strokec4  \cf7 \strokec7 main\cf4 \strokec4 (\cf2 \strokec2 String\cf4 \strokec4  \cf5 \strokec5 args\cf4 \strokec4 [])\{\cb1 \
+\cb3         \cf2 \strokec2 Scanner\cf4 \strokec4  \cf5 \strokec5 sc\cf4 \strokec4  = \cf6 \strokec6 new\cf4 \strokec4  \cf7 \strokec7 Scanner\cf4 \strokec4 (\cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 in\cf4 \strokec4 );\cb1 \
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "Enter Number"\cf4 \strokec4 );\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 n\cf4 \strokec4  = \cf5 \strokec5 sc\cf4 \strokec4 .\cf7 \strokec7 nextInt\cf4 \strokec4 ();\cb1 \
+\cb3         \cb1 \
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "List of primes no"\cf4 \strokec4 );\cb1 \
+\cb3         \cf7 \strokec7 IsPrimeInRanges\cf4 \strokec4 (n);\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf13 \cb3 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 void\cf4 \strokec4  \cf7 \strokec7 IsPrimeInRanges\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 n\cf4 \strokec4 )\{\cb1 \
+\cb3         \cf6 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 i\cf4 \strokec4 =\cf9 \strokec9 2\cf4 \strokec4 ; i<=n; i++)\{\cb1 \
+\cb3             \cf6 \strokec6 if\cf4 \strokec4 (\cf7 \strokec7 IsPrime\cf4 \strokec4 (i))\{\cb1 \
+\cb3             \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (i+\cf8 \strokec8 ""\cf4 \strokec4 );\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 ();\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf13 \cb3 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 boolean\cf4 \strokec4  \cf7 \strokec7 IsPrime\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 n\cf4 \strokec4 )\{\cb1 \
+\cb3         \cf6 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 i\cf4 \strokec4 =\cf9 \strokec9 2\cf4 \strokec4 ; i<=\cf5 \strokec5 Math\cf4 \strokec4 .\cf7 \strokec7 sqrt\cf4 \strokec4 (n); i++)\{\cb1 \
+\cb3             \cf6 \strokec6 if\cf4 \strokec4 (n % i == \cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3                 \cf6 \strokec6 return\cf4 \strokec4  \cf13 \cb3 \strokec13 false\cf4 \cb3 \strokec4 ;\cb1 \
+\cb3             \}\cb1 \
+\cb3         \} \cb1 \
+\cb3         \cf6 \strokec6 return\cf4 \strokec4  \cf13 \cb3 \strokec13 true\cf4 \cb3 \strokec4 ;   \cb1 \
+\cb3     \}\cb1 \
+\
+\cb3    \cb1 \
+\cb3 \}\cb1 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 7) For binary to decimal - for e.g. we want to find decimal for binary no 101\
+Right 1 will be multiple with 2 pow 0 , 0 will be multiply with 2 pow 1 and 1 will be multiply with 2 pow 2\
+So 1 * 1 + 0 * 2 + 1*4 = 5 \'97 binary - 101 = decimal 5\
+\
+Logic -\
+1. we are traversing from right to left and while traversing we are increasing pow. \
+2. Find last digit of no. To get last digit we need to divide no by 10 and take its reminder . no%10\
+3. Then we can multiply that no by 2 to pow 0 to keep extending until no becomes zero and keep adding to existing no\
+4. Also we need to remove last digit from no once multiplication and addition is done to get only remaining no.\
+\
+Note - when we use Math.pow function to calculate power it consider base and pow as double and return double\
+Here I am covering that double to int\
+\
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 int\cf4 \strokec4  \cf7 \strokec7 BinaryToDecimal\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 binNo\cf4 \strokec4 )\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 pow\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 lastDigit\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 decNo\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf6 \strokec6 while\cf4 \strokec4 (binNo>\cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3             lastDigit = binNo % \cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3             decNo = decNo + (lastDigit * (\cf2 \strokec2 int\cf4 \strokec4 ) \cf5 \strokec5 Math\cf4 \strokec4 .\cf7 \strokec7 pow\cf4 \strokec4 (\cf9 \strokec9 2\cf4 \strokec4 ,pow));\cb1 \
+\cb3             pow++;\cb1 \
+\cb3             binNo=binNo/\cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf6 \strokec6 return\cf4 \strokec4  decNo;\cb1 \
+\cb3     \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+8) For decimal to binary - for e.g. we want to find binary for decimal 5\
+\
+Logic - \
+1. Keep fetching rem by dividing no by 2 until no becomes 0 to find binary no. decNum%2\
+2. multiply rem by 10 to pow 0 ,1,2 so on and add that value to calculated binNum\
+3.Since we are dividing no by 2 to fetch updated no divide it by 2. decNum/2.\
+\
+For e.g.1) 5 will be divided by 2 then rem will be 1 and quotient will be 2.\
+2) multiply rem I.e. 2 with 10 pow 0 i.e. 1 and add that to variable .\
+3) now no is 2 since quotient is 2 . Again divide it by 2 . Now remainder is 0. Add that to no and now no is 10\
+4) now quotient is 1. Now again try to divide it by 2 . Remainder will be 1\
+\
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 int\cf4 \strokec4  \cf7 \strokec7 DecimalToBinary\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 decimalNo\cf4 \strokec4 )\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 pow\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 rem\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 binaryNo\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf6 \strokec6 while\cf4 \strokec4 (decimalNo>\cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3             rem = decimalNo % \cf9 \strokec9 2\cf4 \strokec4 ;\cb1 \
+\cb3             binaryNo = binaryNo + (rem * (\cf2 \strokec2 int\cf4 \strokec4 ) \cf5 \strokec5 Math\cf4 \strokec4 .\cf7 \strokec7 pow\cf4 \strokec4 (\cf9 \strokec9 10\cf4 \strokec4 ,pow));\cb1 \
+\cb3             pow++;\cb1 \
+\cb3             decimalNo=decimalNo/\cf9 \strokec9 2\cf4 \strokec4 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf6 \strokec6 return\cf4 \strokec4  binaryNo;\cb1 \
+\cb3     \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \strokec11 Step 1: Start with the decimal number, which is 5 in this case.\
+Step 2: Divide 5 by 2. The result is 2 with a remainder of 1.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf10 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Quotient: 2\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Remainder: 1\
+\pard\pardeftab720\partightenfactor0
+\cf10 Step 3: Divide the quotient from Step 2 (which is 2) by 2 again. The result is 1 with a remainder of 0.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf10 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Quotient: 1\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Remainder: 0\
+\pard\pardeftab720\partightenfactor0
+\cf10 Step 4: Divide the quotient from Step 3 (which is 1) by 2 again. The result is 0 with a remainder of 1.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf10 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Quotient: 0\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Remainder: 1\
+\pard\pardeftab720\partightenfactor0
+\cf10 Step 5: Continue dividing the quotient by 2 until the quotient becomes 0. In this case, the quotient is already 0.\
+Step 6: Read the remainders from bottom to top. The remainders in this case are 101. This is the binary representation of the decimal number 5.\
+So, the decimal number 5 is equivalent to the binary number 101.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 7) Palindrome No\
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 A number is called a palindrome if the number is equal to the reverse of a number. For example, 121 is a palindrome because the reverse of 121 is 121 itself.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 void\cf4 \strokec4  \cf7 \strokec7 checkPalindromeNo\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 num\cf4 \strokec4 )\{\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 lastDigit\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 rev\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 originalNo\cf4 \strokec4  = num;\cb1 \
+\cb3         \cf6 \strokec6 while\cf4 \strokec4 (num>\cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3             lastDigit = num % \cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3             rev = rev * \cf9 \strokec9 10\cf4 \strokec4  + lastDigit;\cb1 \
+\cb3             num = num/\cf9 \strokec9 10\cf4 \strokec4 ;   \cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf15 \cb3 \strokec15 //System.out.println("rev "+rev);\cf4 \cb1 \strokec4 \
+\cb3         \cb1 \
+\cb3         \cf6 \strokec6 if\cf4 \strokec4 (originalNo==rev)\{\cb1 \
+\cb3             \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "Number is a palindrome"\cf4 \strokec4 );\cb1 \
+\cb3         \}\cf6 \strokec6 else\cf4 \strokec4 \{\cb1 \
+\cb3             \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "Number is not a palindrome"\cf4 \strokec4 );\cb1 \
+\cb3         \}\cb1 \
+\cb3     \}    \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb16 \strokec0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 8)  Sum of Digits\
+Best practice is to use short hand operators.\
+Fetching last digit and keep adding those to new variable until no becomes 0.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 class\cf4 \cb3 \strokec4  \cf2 \strokec2 SumOfDigits\cf4 \strokec4 \{\cb1 \
+\cb3     \cf13 \cb3 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 void\cf4 \strokec4  \cf7 \strokec7 main\cf4 \strokec4 (\cf2 \strokec2 String\cf4 \strokec4  \cf5 \strokec5 args\cf4 \strokec4 [])\{\cb1 \
+\cb3         \cf2 \strokec2 Scanner\cf4 \strokec4  \cf5 \strokec5 sc\cf4 \strokec4  = \cf6 \strokec6 new\cf4 \strokec4  \cf7 \strokec7 Scanner\cf4 \strokec4 (\cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 in\cf4 \strokec4 );\cb1 \
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "Enter number"\cf4 \strokec4 );\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 num\cf4 \strokec4  = \cf5 \strokec5 sc\cf4 \strokec4 .\cf7 \strokec7 nextInt\cf4 \strokec4 ();\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 sum\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 lastDigit\cf4 \strokec4 ;\cb1 \
+\cb3         \cf6 \strokec6 while\cf4 \strokec4 (num>\cf9 \strokec9 0\cf4 \strokec4 )\{\cb1 \
+\cb3             lastDigit=num%\cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3             sum+=lastDigit;\cb1 \
+\cb3             num/= \cf9 \strokec9 10\cf4 \strokec4 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "Sum of digits "\cf4 \strokec4 +sum);\cb1 \
+\cb3     \}\cb1 \
+\cb3 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 \strokec11 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Patterns - Help us with rational thinking and logical break down of tasks\
+1. Check no of rows . Outer loop will always run upto no of rows\
+2. Check how many star we need to print. \
+3. Consider it as matrix in some cases where we will provide columns and rows and check (rows, columns) position.\
+\
+1) Hollow Rectangle pattern \
+*****\
+*      *\
+*      *\
+*****\
+1.Outer loop will always run upto no of rows\
+2. Inner loop will run till no of columns\
+3.We are going to print star only at boundary so rows can be 1 or total rows and columns can be 1 or total columns \
+so if any of these is matching print start else print empty space\
+\
+2) \cf2 \cb3 \outl0\strokewidth0 \strokec2 Inverted Rotated Half Pyramid\cf4 \cb1 \strokec4 \
+\cf10 \cb14 \outl0\strokewidth0 \
+        *\
+      **\
+    ***\
+  ****\
+*****\
+\
+1. Outer loop will always run upto no of rows.\
+2. Check no of spaces and star in each row. Stars are equal to no of rows i.e. 1st row have one star 2nd row have 2 star so on and spaces are total no of rows - no of row - n-i\
+3.  Write two inner loop 1st will run from j to n-i for spaces and 2nd will run from j to now of rows I.e. I. \
+\
+3) \cf2 \cb3 \outl0\strokewidth0 \strokec2 InvertedHalfPyramidNumber\cf4 \cb1 \strokec4 \
+\cf10 \cb14 \outl0\strokewidth0 \
+12345\
+1234\
+123\
+12\
+1\
+\
+1. Outer loop will always run upto no of rows.\
+2. Check no of columns/numbers its printing in each row \
+I=1 numbers 1 to 5\
+I= 2 numbers 1 to 4\
+I=3 numbers 1 to 3\
+I=4 numbers 1 to 2\
+I=5 numbers 1 to 1\
+\
+So j will start with 1 always upto n-i+1\
+\
+4) ButterflyPattern.java\
+\
+*                *\
+**            **\
+***        ***\
+****    ****\
+**********\
+**********\
+****    ****\
+***        ***\
+**            **\
+*                *\
+\
+1. Outer loop will always run upto no of rows.\
+2. Lower pattern is inversion of upper so will focus on printing upper patter\
+*                *\
+**            **\
+***        ***\
+****    ****\
+**********\
+3.Check star+spaces+star combination . For 1st row 1 star for 2nd 2 star and so on\
+For 1 row 8 spaces 2nd 6 spaces 3rd 4 spaces and 4th 2 spaces and so on ..so spaces are multiple of 2 \
+If we do totalnoof rows - no of that row I.e (5-1)*2 then (5-2)*2 n-i*2\
+4. 1st inner loop will be from j=I to j<-n for * then 2nd inner loop will be j=I to j<=(n-i)*2 for spaces and 3rd again will be from j=I to j<-n for * then print space\
+5. Now we got upper part for Lowe part we will just change outer loop from I=n to I>=I I\'97\
+**********\
+****    ****\
+***        ***\
+**            **\
+*                *\
+\
+5) SolidRombus\
+\
+    *****\
+   *****\
+  *****\
+ *****\
+*****\
+\
+1. Outer loop will always run upto no of rows.\
+2. Check spaces+star . We don\'92t need to consider space in the end because it will print automatically.\
+4. For 1 row 4 spaces 5 stars 2nd 3 spaces 5 stars 3rd 2 spaces 5 stars and 4th 1 space and 5 stars and last 0 spaces and 5 stars \
+so based on this 1st inner loop is for spaces where spaces we need to print from j=1 to j=n-i no of that row and second inner loop is for stars\
+Where we need to print from j=1 to j=n  total no rows\
+\
+6) HollowRombus\
+\
+    *****\
+   *     *\
+  *     *\
+ *     *\
+*****\
+\
+1. Outer loop will always run upto no of rows.\
+2. Check spaces+star . We don\'92t need to consider space in the end because it will print automatically.\
+4. For 1 row 4 spaces 2nd 3 spaces 3rd 2 spaces and 4th 1 space and last 0 spaces so based on this 1st inner loop is for spaces where spaces we need to print \
+from j=1 to j=n-i no of that row and second inner loop is for starsWhere we need to print from j=1 to j=n  total no rows\
+5. For star printing follow hollow rectangle code - Inner loop will run till no of columns\
+3.We are going to print star only at boundary so rows can be 1 or total rows and columns can be 1 or total columns \
+so if any of these is matching print start else print empty space\
+\
+7) DiamondPattern\
+\
+	  *\
+        ***\
+      *****\
+    *******\
+  *********\
+***********\
+***********\
+  *********\
+    *******\
+      *****\
+        ***\
+          *\
+\
+\
+1. Outer loop will always run upto no of rows.\
+2. Check spaces+star . \
+3. We will consider upper half only since lower half is same. 1st inner loop For 1 row 4 spaces 2nd 3 spaces 3rd 2 spaces and 4th 1 space and last 0 spaces so based on this 1st inner loop is for spaces where spaces we need to print from j=1 to j=n-i no of that row.\
+	  *\
+        ***\
+      *****\
+    *******\
+  *********\
+***********\
+2nd loop for j =1 star=1 for j=2 star is 3 for j=3 star is 5 so star are in odd combination we can use 2x+1 or 2x-1 since here 2x-1 is applicable will check that\
+So loop will be from j=1 to j=(2*I)-1 for star. Then next line.\
+4. For lower half will change outer loop from I=n to I>=1 and I\'97 rest code will be same.\
+\
+***********\
+  *********\
+    *******\
+      *****\
+        ***\
+          *\
+\
+Watch weekly session as well for pattern questions\
+\
+8) NumberPyramidPattern\
+\
+    1\
+   2 2\
+  3 3 3\
+ 4 4 4 4\
+5 5 5 5 5\
+\
+1. Outer loop will always run upto no of rows. I=1 to I<=5\
+2. Print spaces in left side using 1st inner loop i.e j=1 to n-i\
+3. Print no and then one space to right after that no in second inner loop \
+j=1 to j<=I print j and if j!=I then print space . We don\'92t need to print space for (1,1) , (2,2),\
+4. Then next line\
+\
+9) PalindromicPatternWithNoPattern\
+\
+        1\
+      212\
+    32123\
+  4321234\
+543212345\
+\
+1. Outer loop will always run upto no of rows. I=1 to I<=5\
+2. Print spaces in left side using 1st inner loop i.e j=1 to n-i\
+3. Consider left part only and Print no to left in second inner loop j=I to j>=1 j\'97 print j\
+        1\
+      21\
+    321\
+  4321\
+54321\
+4. Print no in right using third loop j=2;j<=I;j++ print j\
+\
+2\
+23\
+234\
+2345\
+\
+5. Then next line\
+\
+Array\
+\
+1) Binary Search -  \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf4 \cb3 \outl0\strokewidth0 \strokec4   \cf15 \cb3 \strokec15 //** Binary Search always work on only sorted array that is prerequisite for binary search/  \cf4 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf10 \cb14 \outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \outl0\strokewidth0 \strokec15 we consider start , end and mid. if key is equal to mid will return key if key is less than mid will search in left\strokec4 \
+\strokec15 if key is greater than mid and search to right and will keep repeating until we left with array of single element.\strokec4 \
+\strokec15 We calculate time complexity based on iteration , (start+end)/2 pow 0 then (start+end)/2 pow 1 and so on until 2 pow k\strokec4 \
+\strokec15 i.e. log2n we represent as O(logn). For array size 8 Linear search if taking 8 then binary will take 4.\
+\
+2) Reverse Array\
+\
+1st logic is run loop from end to start of array and copy element in different array from original array but it takes\
+Space complexity as O(n) another approach is to swapping . We can keep swapping until we end up  with single\
+element it takes \cf10 \cb14 \outl0\strokewidth0 Space complexity as O(1)\
+\
+3) Pairs in Array\
+1. 1st loop will be from I=0 to I< array length and inner loop will be j = I+1 till array length\
+2. If size of array is 5 then will get 4 pairs first then 3 then 2 and then 1 so total pairs are 4+3+2+1 =10 sum of n-1 numbers\
+ Formula for total no of pair is n(n-1)/2 i.e. 5*4/2 = 10\
+\
+\cf2 \cb3 \outl0\strokewidth0 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 numbers\cf4 \strokec4  [] = \{\cf9 \strokec9 2\cf4 \strokec4 ,\cf9 \strokec9 4\cf4 \strokec4 ,\cf9 \strokec9 6\cf4 \strokec4 ,\cf9 \strokec9 8\cf4 \strokec4 ,\cf9 \strokec9 10\cf4 \strokec4 \};\
+\
+(2,4)(2,6)(2,8)(2,10)\
+(4,6)(4,8)(4,10)\
+(6,8)(6,10)\
+(8,10)\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \outl0\strokewidth0 3. \cf10 \cb14 \outl0\strokewidth0 \strokec15 Code time complexity O(n pow 2) . Outer loop will run for O(n) in worst case and inner loop will be line n +(n-1)+(n-2) until becomes 1\
+Which is proportional to \cf10 \cb14 \outl0\strokewidth0 O(n pow 2)\
+\
+\
+4) Print subarray - A  continuous part of a array\
+1. Outer loop will run from I =1 to array.length . 1st Inner loop will run from j = I to array.length then 2nd Inner loop will run from \
+K = I to k= j and then we can print k then next line and once we exit 1st inner loop will print next line.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3 \outl0\strokewidth0 \strokec13 public\cf4 \cb3 \strokec4  \cf13 \cb3 \strokec13 static\cf4 \cb3 \strokec4  \cf2 \strokec2 void\cf4 \strokec4  \cf7 \strokec7 subarray\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4 [] \cf5 \strokec5 numbers\cf4 \strokec4 )\{\cb1 \
+\cb3         \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 ts\cf4 \strokec4 =\cf9 \strokec9 0\cf4 \strokec4 ;\cb1 \
+\cb3         \cf6 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 i\cf4 \strokec4 = \cf9 \strokec9 0\cf4 \strokec4 ;i<\cf5 \strokec5 numbers\cf4 \strokec4 .\cf5 \strokec5 length\cf4 \strokec4 ;i++)\{\cb1 \
+\cb3             \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 start\cf4 \strokec4  = i;\cb1 \
+\cb3             \cf6 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 j\cf4 \strokec4 = i;j<\cf5 \strokec5 numbers\cf4 \strokec4 .\cf5 \strokec5 length\cf4 \strokec4 ;j++)\{\cb1 \
+\cb3                 \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 end\cf4 \strokec4  = j;\cb1 \
+\cb3                 \cf6 \strokec6 for\cf4 \strokec4 (\cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 k\cf4 \strokec4 =start; k<=end;k++)\{\cb1 \
+\cb3                     \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 print\cf4 \strokec4 ( numbers[k]+\cf8 \strokec8 " "\cf4 \strokec4 );\cb1 \
+\cb3                 \}\cb1 \
+\cb3                 ts++;\cb1 \
+\cb3                 \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 ();     \cb1 \
+\cb3             \}\cb1 \
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 ();\cb1 \
+\cb3         \}   \cb1 \
+\cb3         \cf5 \strokec5 System\cf4 \strokec4 .\cf5 \strokec5 out\cf4 \strokec4 .\cf7 \strokec7 println\cf4 \strokec4 (\cf8 \strokec8 "total subarrays = "\cf4 \strokec4 +ts);\cb1 \
+\cb3     \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \outl0\strokewidth0 \
+1. Subarray starting from 2 is 5 -\
+2 \
+2 4 \
+2 4 6 \
+2 4 6 8 \
+2 4 6 8 10 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb1 \outl0\strokewidth0 \strokec4 \
+\cf10 \cb14 \outl0\strokewidth0 2. Subarray starting from 4 is 4 -\
+4 \
+4 6 \
+4 6 8 \
+4 6 8 10 \
+\
+3. Subarray starting from 6 is 3 -\cf4 \cb1 \outl0\strokewidth0 \strokec4 \
+\cf10 \cb14 \outl0\strokewidth0 6 \
+6 8 \
+6 8 10 \
+\
+4. Subarray starting from 8 is 2 -\
+\
+8 \
+8 10\
+\
+5. Subarray starting from 10 is 1 -\
+\
+10\
+\
+So sum of n subarray is 5+4+3+2+1 = 15\
+Which n(n+1)/2\
+\
+5) Largest No and smallest no in array\
+\
+1. We need to consider - infinity to + infinity for smallest and largest so will consider largest as = Integer.MIN_VALUE and\
+Smallest as Integer.MAX_VALUE\
+2. Will traverse through array and check largest with each element if largest is less than element then assign that element as largest\
+Similarly if smallest is greater than element then assign that element as smallest.\
+\
+6) Maximum subarray sum \
+\
+Brute Force approach - \
+Consider array as \{0,2,1\} for maximum subarray we need to find subarray than we need to add those subarray element instead of printing those\
+For  \{0,2,1\} - \
+subarrays for 0 is \{0\} then \{0,2\} then \{0,2,1\} - sum of 1st subarray is 0 then for 2nd is 0+2=2 then for 3rd is 0+2+1=3\
+subarrays for 2 is \{2\} then \{2,1\} - sum of 1st subarray is 2 then for 2nd is 2+1=3\
+subarrays for 1 is \{1\} - sum of 1st subarray is 1\
+\
+So if we compare all these subarray sum then maxsubarraysum is 3.\
+So for getting maxsubarraysum will consider one variable as currentSum and other as maxSum= Integer.MIN_VALUE\
+We will calculate currentSum for each subarray and will compare that with maxSum , if it\'92s greater than maxSum then will update maxSum.\
+We need to initialise currentSum=0 before calculating each subarray.\
+\
+1. Declare and initialise currentSum=0 and maxSum= Integer.MIN_VALUE\
+2. Outer for loop will run from I= 0 to I< array.length. we can store I in start var just for understanding.\
+3. 1st Inner loop will run from j = I to j < array.length. we can store j in end var just for understanding.\
+4. Initialise currentSum = 0 before calculating sum for subarray. \
+5. 2nd Inner loop will run from k= start/I to k <=end/j\
+6. Add array element i.e. number[k] to currentSum - currentSum += number[k]\
+7.Check if currentSum > maxSum if yes then maxSum= currentSum\
+8. We can print current Sum\
+9. Outside of outer loop we can print maxSum.\
+\
+Time Complexity is O(n pow 3) which is worst case time complexity.\
+\
+Prefix Sum approach - \
+\
+Consider array as \{0,2,1\} for maximum subarray we need to find subarray than we need to add those subarray element instead of printing those\
+We can use Prefix sum array for that. \
+For  \{0,2,1\} - \
+0th index of prefix sum array will store sum from 0 to 0. 1st index of prefix sum array will store sum from 0 to 1 i.e. 0+2 =3. 2nd index of prefix sum array \
+will store sum from 0 to 2 i.e. 0+2+1 = 3. So prefix array will be \{0,3,3\}\
+Once we got prefix array we can calculate if start is 0 then we can calculate current sum = prefix[end] else current sum = prefix[end] - prefix[start-1]\
+Here start is 0 so for that currentSum = 3\
+If current is greater than maxSum then update maxSum = curSum\
+\
+1. Declare and initialise currentSum=0 and maxSum= Integer.MIN_VALUE and Prefix array.\
+2. Write loop for prefix sum array. prefix[0] = array[0] Loop will run from I = 1 to I < array.length and add array elements to previously calculated sum of array \
+using prefix[I] = prefix[I-1]+array[I] . Note - if you use here as prefix[I] = array[I-1]+array[I]. It will add element to previous element which is wrong.\
+3. Outer for loop will run from I= 0 to I< array.length. we can store I in start var just for understanding.\
+4. 1st Inner loop will run from j = I to j < array.length. we can store j in end var just for understanding.\
+5. Calculate currentSum , if start/I=0 then currentSum = prefix[end/j] else currentSum = prefix[end/j] - prefix[start/i-1]\
+7. Check if currentSum > maxSum if yes then maxSum= currentSum\
+8. We can print current Sum\
+9. Outside of outer loop we can print maxSum.\
+\
+Time Complexity for calculating prefix array is  O(n) and Time Complexity for current element is  O(n pow 2).\
+so overall time complexity is O(n pow 2) which is optimzed time complexity than previous approach.\
+\
+Kadane\'92s algorithm approach - \
+\
+1. If we have two +Ve value then in output will consider +Ve.\
+2. If we have one +ve and one -ve and +ve value is greater than -ve then kadane consider positive value.\
+3. If we have one +ve and one -ve and -ve value is greater than +ve then kadane will not consider negative value instead it will consider 0.\
+\
+Consider array as \cf4 \cb3 \outl0\strokewidth0 \strokec4 \{-\cf9 \strokec9 2\cf4 \strokec4 ,-\cf9 \strokec9 3\cf4 \strokec4 ,\cf9 \strokec9 4\cf4 \strokec4 ,-\cf9 \strokec9 1\cf4 \strokec4 ,-\cf9 \strokec9 2\cf4 \strokec4 ,\cf9 \strokec9 1\cf4 \strokec4 ,\cf9 \strokec9 5\cf4 \strokec4 ,-\cf9 \strokec9 3\cf4 \strokec4 \};\cb1 \
+\cf10 \cb14 \outl0\strokewidth0 \
+1. Declare and initialise currentSum=0 and maxSum= Integer.MIN_VALUE\
+2. Write loop from I= 0 to I< array.length and calculate curSum by adding each element in array to that sum \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \outl0\strokewidth0 \strokec4 currentSum += numbers[i];\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \outl0\strokewidth0 3. If curSum is coming as less than 0 means negative consider this as 0 instead of negative.\
+Note. If all the elements or array are negative then will get currSum as 0 in this case but ideally ans should be negative no. \
+In that case you can use one more loop to check if all the elements in the array are negative or not if yes than find smallest negative no and print that\
+So if in interview question they have mentioned as if all the no are negative then print 0 or in some question they ask to print maxSum only even if all the\
+No are negative.\
+4. Then check curSum with MaxSum if it is greater assign it to MaxSum.\
+\
+Time complexity is O(n).\
+\
+7) Trapping Rain Water Problem - Q 22 in sheet Medium level ( We might receive this as Trapping acid or other substance or major no of jumps)\
+\
+Given a non-negative integers representing an elevation map where the width each bar is 1, compute how much water it can trap after raining.\
+\
+Approach\
+1. If we have a single bar then there is no chance of trapping water.If we have two bars then also there is no chance of trapping water.If all the \
+bars are in ascending or descending order then also there is no chance of trapping water. So we need always more than 2 bars. No of bars > 2\
+And no water is trapped in ascending / descending order bars.\
+2. Suppose we have three bars 1st bar height is 4 then 2nd bar height is 2 and 3rd is 6 . Water level will be 4 because if water will increase beyond 4 it will\
+Start spilling so there is no chance of having water level more than 4. So trap water will be bar (water level - bar height) * bar width i.e. (4-2)*1 = 2\
+3. For finding water level we need to find left maximum boundary and right maximum boundary and then we can take minimum from them.\
+4. For left maximum boundary will start from 1st bar to last bar where 1st bar maximum boundary is equal to his own height and for right maximum \
+boundary will start from length-1 to first bar where as last bar maximum boundary is equal to his own height.\
+\
+1. Create two array for left max boundary and right max boundary with size are input array\'92s length. we have used auxiliary array.Auxiliary arrays are \
+similar to normal array which provide some help , we can also called it as helper array. \
+1.Calculate left max boundary. For left max boundary , 1st bar boundary will be its own height / bar is boundary for itself so leftmaxboundary[0] = array[0]\
+and will write loop from I =1 instead of I =0 to I< array.length. for finding max we can either check manually or we have Math.max in util package \
+leftmaxboundary[I]=Math.max(array[I],leftmaxboundary[I-1]) . Will keep comparing array element with previous leftmaxboundary that is left boundaries of array.\
+2.Calculate right max boundary - For right max boundary , last bar boundary is itself is boundary/ boundary will be its own height so \
+rightmaxboundary[array.length-1] = array[array.length-1] and will write loop from I =n-2 instead of I =n-1 to I>= 0 and I\'97. for finding max we can either check\
+manually or we have Math.max in util package rightmaxboundary[I]=Math.max(array[I], rightmaxboundary[I+1]) . Will keep comparing array element with next \
+rightmaxboundary that is right boundaries of array.\
+3. Once we got leftmaxboundary and rightmaxboundary will write loop from I=1 to I<array.length and will find minimum from them and assign that to water level\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \outl0\strokewidth0 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 waterLevel\cf4 \strokec4 = \cf5 \strokec5 Math\cf4 \strokec4 .\cf7 \strokec7 min\cf4 \strokec4 (leftMax[i],rightMax[i]);\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb14 \outl0\strokewidth0 4.Once we got water level , will subtract height of bar from that water level - \cf4 \cb3 \outl0\strokewidth0 \strokec4 trappingRainWater += waterLevel - height[i];\cb1 \
+\cf10 \cb14 \outl0\strokewidth0 	\
+\
+Time Complexity is O(n) which is linear TC.\
+\
+8) BuyAndSellStocks\
+You are given an array prices where prices[I] is the price of the given stock on the ith day. You want to maximise your profit by choosing single day\
+To buy one stock and choosing different day in future sell that stock. Return maximum profit you achieve from this transaction. If you cannot \
+Achieve any profit, return 0.\
+\
+\
+1. Suppose we have given array of stocks 
+\f1\fs24 \cf4 \cb3 \outl0\strokewidth0 \strokec4 \{\cf9 \strokec9 7\cf4 \strokec4 ,\cf9 \strokec9 1\cf4 \strokec4 ,\cf9 \strokec9 5\cf4 \strokec4 ,\cf9 \strokec9 3\cf4 \strokec4 ,\cf9 \strokec9 6\cf4 \strokec4 ,\cf9 \strokec9 4\cf4 \strokec4 \};\cb1  
+\f0\fs36 \cf10 \cb14 \outl0\strokewidth0 where we need to find maximum profit after buying and selling that stock. For profit we need to\
+Buy stock at minimum price and sell stock as maximum price. Profit = BuyPrice - SellPrice. If we are getting profit in negative it means its a loss and\
+We keep return 0 instead of negative value.\
+2. We will consider buyStock value as +infinity so  buyStock=Integer.MAX_VALUE so whatever value we get for buyStock is less than this so we can\
+update that and consider maxProfit as 0.\
+3. We will run loop from I=0 to I< array.length , then will check if buyStock value is less than current Value if yes then we can calculate profit\
+Profit = array[I]-buystock and we can find max profit by comparing this profit with maxProfit variable maxProfit=Math.max(maxProfit,Profit) and \
+if buyStock value is grater than current Value then we can update buyStock with current value i.e. buyStock=array[I].\
+\
+Suppose we buy stock at first day with price 7 then we sell it at 2nd day with price 1 then in that case loss will be -6 so since buyStock is not less than\
+Sell stock / current price we can update buyStock price to 1 . Now on 3rd day stock price is 5 . Buystock is less than current price , Profit will be 5-1 =4 and\
+Will update maxprofit to 4. Again will move to 4th day where Stock price 3 since buy stock is 1 which is less then 3 we will calculate profit= 3-1 =2 since\
+Profit 2 is less than maxprofit 4 we will not update maxprofit , then we move to next stock Price  6 so profit is 6-1 = 5 ,will update Max profit to 5 was its \
+Greater than current maxprofit 4. Then for last stock price profit will be 4-1 = 3 which is less than max profit so we won\'92t update that and end loop\
+Max profit will be 5.\
+\
+Time Complexity is O(n) which is linear TC.\
+\
+9) Find element in sorted and rotated array\
+\
+Note - we can\'92t use binary search directly as it required array to be in sorted order\
+We can use modified binary search alogorithm.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf4 \cb3 \outl0\strokewidth0 \strokec4  \cf2 \strokec2 int\cf4 \strokec4  \cf5 \strokec5 nums\cf4 \strokec4  [] = \{\cf9 \strokec9 4\cf4 \strokec4 ,\cf9 \strokec9 5\cf4 \strokec4 ,\cf9 \strokec9 6\cf4 \strokec4 ,\cf9 \strokec9 7\cf4 \strokec4 ,\cf9 \strokec9 0\cf4 \strokec4 ,\cf9 \strokec9 1\cf4 \strokec4 ,\cf9 \strokec9 2\cf4 \strokec4 \};\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf10 \cb14 \outl0\strokewidth0 \
+1. Declare and initialise start and end , start =0 and end = array.length-1 , In this case start =0 end= 6\
+2. Write while loop until (start<=end) i.e 0<=6\
+3. Inside while loop , calculate mid = (start+end)/2 i.e 0+6/2 = 3 , mid = 3\
+4. In If loop check target is equal to nums[mid] if yes return mid , in this case target is 0 which is not equal to nums[3] I.e. 7\
+5. Now we need to decide whether to check target on left of array or write for that write else If for checking whether nums[start]< nums[mid] in this case 4<7 \
+which is true. If true then we will traverse on left of array. Inside that else If , write If condition to check target> =nums[start] and target<nums[mid] in this \
+case 0 > = 4 && 0 < 7 which is false but If true then end = mid - 1 which is keep moving left , If false like in this case then start = mid+1 i.e. 3+1 =4\
+Move start toward right . \
+6. Now start = 4 and end = 6 so 4<=6 , mid = 4+6/2 = 10/2= 5. Now again it will check mid i.e 1 == target 0 no so it will go inside if else.\
+7. Again will check if nums[4] < nums[5] i.e 0<1 true then it will check if target >= nums[4] && target < nums[5\} i.e. 0 > = 0 && 0<1\
+True so it will move end to left I.e end = mid -1 = 5-1 = 4 \
+8.Now again while start <= end so 4<=4 so mid = 4+4/2 = 8/2 =4 and target == nums[4] which is true so it will return index = 4\
+\
+Steps\
+1. Check start <= end \
+2. Check mid and if mid is equal to target return it.\
+2. If not check start < mid if yes check target is between start and mid if yes then move end to left by end=mid -1\
+If target is not between start and end discard left move to right using start = mid+1\
+3. If start < mid is not true then check target is between mid and end if yes then move to right using start=mid+1\
+If false discard right array and move to left using end = mid-1\
+4. Repeat steps until start <=end\
+5. Return -1 for elements that doesn\'92t exist after while loop\
+\
+Time Complexity is O(logn) similar to binary search\
+\
+10. 
+\f1\fs24 \cf2 \cb3 \outl0\strokewidth0 \strokec2 MonotonicArray\cf4 \cb1 \strokec4 \
+
+\f0\fs36 \cf10 \cb14 \outl0\strokewidth0 Elements must be in increasing order or decreasing order or same elements should be there than only its monotonic array.\
+\
+1. We can create two separate method one is for checking IsIncreasing and another is for checking IsDecreasing.\
+2. In IsIncreasing traverse from I=0 to I=array.length we can check if nums[I] > nums[I+1] , its means nums at 0th position is greater than nums at 1st position\
+Then array is not in increasing order so we can return false else outside of loop we can return true.\
+3. In IsDecreasing traverse from I=0 to I=array.length we can check if nums[I] < nums[I+1] , its means nums at 0th position is smaller than nums at 1st position\
+Then array is not in decreasing order so we can return false else outside of loop we can return true.\
+4. In main we can return array is monotonic if any one of IsIncreasing or IsDecreasing is true.\
+\
+Time Complexity is O(n) which is linear TC.\
+\
+11. LonelyNoInArray\
+No whose adjust no I.e. x+1 or x-1 is not present than that no is lonely.\
+\
+1. Prerequisite for finding lonely no is array must be sorted in ascending order so use Arrays.sort(nums). Write loop from I=0 to I<array.length ,\
+2. For 0th index we don\'92t need to check for x-1 otherwise we encounter ArrayIndexOutOfBound\
+So add 1st If check I==0 if true than check nums[I+1] - nums[I] > 1 , it means if we subtract no at 0th index from 1st index and if its not returning\
+1 then it is Lonely No. \
+3. Write else If condition for outside If where I == n-1 , it means if I is last index in that case we don\'92t need to check for x+1.\
+Write if condition is that else if to check nums[I]- nums[I-1] > 1 , it means if we subtract second at last index from last index and if its not returning\
+1 then it is Lonely No. \
+4. Add else to outer else If for indices which are in between 0 and n and add if condition in that checking if nums[I+1] - nums[I] > 1 and nums[I]- nums[I-1] > 1\
+and if its not returning1 then it is Lonely No. \
+\
+Time Complexity is O(nlogn) . Sorting has time complexity of O(nlogn) and for loop its O(n) so overall time complexity is O(nlogn) \
+\
+12. Return Triplets from Integer Array\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs36\fsmilli18400 \cf0 \cb16 \outl0\strokewidth0 \strokec10 Given an integer array nums, return all the triplets \strokec0 \
+\strokec10 [nums[i], nums[j],  \strokec0 \
+\strokec10 nums[k]] \strokec0 \
+\strokec10 such that \strokec0 \
+\strokec10 i != j,\strokec0 \
+\strokec10  i != k, and\strokec0 \
+\strokec10  j != k, and\strokec0 \
+\strokec10  nums[i] + nums[j] + nums[k] == 0.\strokec0 \
+\strokec10 Notice that the solution set must not contain duplicate triplets\strokec0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf10 \cb14 \outl0\strokewidth0 \
+1. Write three loops , outer starting from I = 0 to array.length , inner j= I+1 to array.length and again inner k = j+1 to array.length.\
+2. Check 
+\f1\fs24 \cf4 \cb3 \outl0\strokewidth0 \strokec4 nums[i] + nums[j] + nums[k] == \cf9 \strokec9 0\cf4 \strokec4 )\cb1 \
+
+\f0\fs36 \cf10 \cb14 \outl0\strokewidth0 3. Now as mentioned in problem duplicate triplets are not allowed so we will use array list to store elements and after that we will sort them.\
+4. Once sorting is done will create one more nested List - List<List<integer>> to store triplet will check if its there in list if not then will add\
+Them to list \
+\
+Time Complexity is O(n3) for Brute Force approach.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cf11 \cb1 \outl0\strokewidth0 \strokec11 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf18 \strokec18 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \strokec10 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf19 \cb12 \strokec19 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \strokec10 \
+}
